@@ -28,7 +28,7 @@ export default  function NewsItem(props) {
             <p className="card-text">
               <small className="text-muted">
                 By {!author ? "Unknown" : author} on{" "}
-                {new Date(publishedAt).toGMTString()}
+                {new Date(publishedAt).toLocaleDateString()}
               </small>
             </p>
             <a
